@@ -51,7 +51,7 @@ public class LRUCache<K,V> {
     public LRUCache(int capacity){
         this.capacity = capacity;
     }
-    void add(K key, V val){
+    void put(K key, V val){
         if(cache.size() == capacity){
             Node<K,V> lastNode = access.getLast();
             access.remove(lastNode);
@@ -67,7 +67,7 @@ public class LRUCache<K,V> {
         }
     }
 
-    V getVal(K key){
+    V get(K key){
         Node<K,V> node = cache.get(key);
         if(node == null)  return null;
         access.remove(node);

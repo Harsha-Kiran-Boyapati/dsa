@@ -1,6 +1,6 @@
 package dsa;
 
-import dsa.leetcode150.MergeSortedArrays;
+import dsa.leetcode150.arrays.MergeSortedArrays;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
