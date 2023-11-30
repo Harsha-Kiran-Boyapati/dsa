@@ -4,8 +4,10 @@ import lld.splitwise.v1.exceptions.InvalidExpenseException;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.NonNull;
 
 import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
@@ -17,7 +19,7 @@ public abstract class Expense {
     private  double amountPaid;
     protected  Map<User, Double> lentAmount;
 
-    public Expense(User _payer, Double _amountPaid) throws InvalidExpenseException {
+    public Expense(@NonNull User _payer, Double _amountPaid) throws InvalidExpenseException {
         if(_amountPaid == 0.0)
             throw new InvalidExpenseException("amountPaid cannot be zero");
         payer = _payer; amountPaid = _amountPaid;

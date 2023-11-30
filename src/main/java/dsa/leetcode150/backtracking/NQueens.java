@@ -10,6 +10,7 @@ import java.util.HashSet;
 public class NQueens {
     int count;
 
+    //my solution is about finding valid permutations of indices
     public int totalNQueens(int n) {
         //each queen will be in a different i
         //number of total queens number of permutations of numbers 0 to 7;

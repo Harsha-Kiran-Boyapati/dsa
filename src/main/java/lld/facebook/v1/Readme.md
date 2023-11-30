@@ -6,5 +6,5 @@
 - feed
 
 ## Implementation Decisions
-* not making the code safe for concurrent access
+* not making the code safe for concurrency access
 - not caring about efficiency or scalablity

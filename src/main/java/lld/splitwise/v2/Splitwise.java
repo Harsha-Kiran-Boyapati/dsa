@@ -1,7 +1,6 @@
 package lld.splitwise.v2;
 
 import lld.splitwise.v1.exceptions.InvalidExpenseException;
-import lld.splitwise.v2.models.EqualExpense;
 import lld.splitwise.v2.models.User;
 import lld.splitwise.v2.services.ExpenseService;
 import lld.splitwise.v2.services.UserService;
@@ -14,7 +13,7 @@ public class Splitwise {
         return UserService.addUser(name, mail, number);
     }
 
-    public static EqualExpense addEqualExpense(User payer, double amountPaid, Set<User> receivers) throws InvalidExpenseException {
+    public static void addEqualExpense(User payer, double amountPaid, Set<User> receivers) throws InvalidExpenseException {
         ExpenseService.addEqualExpense(payer, amountPaid, receivers);
     }
 
