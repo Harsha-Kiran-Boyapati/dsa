@@ -1,5 +1,6 @@
-package dsa.cache;
+package dsa.leetcode150;
 
+import dsa.leetcode150.LRUCache;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

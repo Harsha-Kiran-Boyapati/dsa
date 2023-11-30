@@ -1,4 +1,4 @@
-package dsa.leetcode150.arrays;
+package dsa.others.arrays;
 
 public class LargestLoss {
     public int solve(int[] prices){

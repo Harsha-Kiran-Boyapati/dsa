@@ -1,5 +1,6 @@
-package dsa.regex;
+package dsa.others.regex;
 
+import dsa.others.regex.MultiStarRegex;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

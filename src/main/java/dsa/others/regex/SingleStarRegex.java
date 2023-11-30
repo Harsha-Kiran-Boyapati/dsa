@@ -1,4 +1,4 @@
-package dsa.regex;
+package dsa.others.regex;
 
 //Given a string s and pattern p with utmost one star
 //match s and p

@@ -1,4 +1,4 @@
-package dsa;
+package dsa.leetcode150.arrays;
 
 import dsa.leetcode150.arrays.MergeSortedArrays;
 import org.junit.jupiter.api.Test;

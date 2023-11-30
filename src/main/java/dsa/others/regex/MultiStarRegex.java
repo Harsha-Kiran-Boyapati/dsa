@@ -1,4 +1,4 @@
-package dsa.regex;
+package dsa.others.regex;
 
 public class MultiStarRegex {
     public static boolean match(String s, String p){

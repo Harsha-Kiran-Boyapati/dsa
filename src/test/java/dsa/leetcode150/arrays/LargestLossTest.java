@@ -1,5 +1,6 @@
 package dsa.leetcode150.arrays;
 
+import dsa.others.arrays.LargestLoss;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

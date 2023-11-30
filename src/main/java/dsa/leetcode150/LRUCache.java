@@ -1,4 +1,4 @@
-package dsa.cache;
+package dsa.leetcode150;
 
 import java.util.HashMap;
 
