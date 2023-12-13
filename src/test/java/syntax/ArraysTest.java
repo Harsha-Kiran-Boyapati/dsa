@@ -36,6 +36,9 @@ public class ArraysTest {
         Integer[] arr2 = new Integer[]{10,2,3,4,5,6};
 //        Comparator can only be give to object arrays but not int arrays
         Arrays.sort(arr2, Comparator.reverseOrder());
+       int[] arr3 =  Arrays.stream(arr2).sorted(Comparator.reverseOrder()).mapToInt(x -> x).toArray();
+
+       assertEquals(10, arr3[0]);
     }
 
     @Test

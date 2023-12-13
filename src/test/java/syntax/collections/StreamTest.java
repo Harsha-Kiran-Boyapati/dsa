@@ -21,6 +21,11 @@ public class StreamTest {
     }
 
     @Test
+    void filterStream() {
+        assertEquals(1, Stream.of(3,4,5).filter(x -> x>4).count());
+    }
+
+    @Test
     void sortStream() {
         Stream<Integer> stream = Stream.of(10, 2,3).sorted();
         assertEquals(2, stream.findFirst().orElse(0));
