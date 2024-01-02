@@ -5,8 +5,6 @@ import lombok.Setter;
 
 public class TrieNode {
     TrieNode[] children;
-    @Getter
-    @Setter
     private boolean word = false;
 
     public TrieNode() {
@@ -25,5 +23,8 @@ public class TrieNode {
         if(this.children != null) return this.children[c-'a'];
         else return null;
     }
+
+    public void setWord(boolean _word){this.word = _word;}
+    public boolean isWord(){return this.word==true;}
 
 }
